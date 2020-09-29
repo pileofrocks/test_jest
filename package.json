@@ -1,0 +1,22 @@
+{
+  "name": "test_jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "NODE_ENV=test node --expose-gc --max-old-space-size=6044  node_modules/.bin/jest  --logHeapUsage  -i --detectOpenHandles --forceExit --config jest.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.4.1",
+    "ts-node": "^9.0.0"
+  }
+}
